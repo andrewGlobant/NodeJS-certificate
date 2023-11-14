@@ -35,3 +35,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/exp
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+
+https://developer.mozilla.org/en-US/docs/Glossary/Hoisting
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
