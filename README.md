@@ -44,3 +44,20 @@ https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototy
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
+
+https://nodejs.org/dist/latest-v18.x/docs/api/modules.html
+
+https://nodejs.org/api/os.html
+
+https://nodejs.org/api/process.html
+
+https://docs.npmjs.com/cli/v8/commands/npm-install
+
+https://semver.org
+
+https://nodeschool.io
+
+https://github.com/workshopper/learnyounode
+
+https://github.com/sporto/planetproto
+
