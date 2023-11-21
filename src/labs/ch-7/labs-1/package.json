@@ -2,7 +2,7 @@
   "name": "labs-1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.mjs",
+  "main": "index.js",
   "scripts": {
     "test": "node test.mjs"
   },
