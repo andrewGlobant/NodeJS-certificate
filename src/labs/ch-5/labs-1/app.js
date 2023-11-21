@@ -1,4 +1,9 @@
 'use strict'
+
+function prefixer(message){
+    return (name) => message + name
+}
+
 const sayHiTo = prefixer('Hello ')
 const sayByeTo = prefixer('Goodbye ')
 console.log(sayHiTo('Dave')) // prints 'Hello Dave'
