@@ -21,3 +21,5 @@ const opC = (cb) => {
   }, 125)
 }
 
+Promise.all([opA(print), opB(print), opC(print)])
+

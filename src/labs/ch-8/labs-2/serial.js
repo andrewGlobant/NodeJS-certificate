@@ -23,3 +23,9 @@ const opC = (cb) => {
     cb(null, 'C')
   }, 125)
 }
+
+const pA = promisify(opA)
+const pB = promisify(opB)
+const pC = promisify(opC)
+
+pA(print).then(pB(print)).then(pC(print))

@@ -18,4 +18,8 @@ function listener () {
 }
 
 
+ee.once('tick', async ()=>{
+ listener()
+})
+
 
