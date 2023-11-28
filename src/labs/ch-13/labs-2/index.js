@@ -41,6 +41,8 @@ writer().catch((err) => {
   process.exit(1)
 })
 
+let newFileDate 
+
 function exercise (project) {
   const files = new Set(fs.readdirSync(project))
   fs.watch(project, (evt, filename) => {
@@ -48,10 +50,16 @@ function exercise (project) {
       const filepath = join(project, filename)
       const stat = fs.statSync(filepath)
 
-      // TODO - only set the answer variable if the filepath
-      // is both newly created AND does not point to a directory
-
-      answer = filepath
+      if (stat.isFile()){
+        if(!newFileDate) {
+          newFileDate = stat.birthtimeMs
+          answer = filepath
+  
+        } else if(newFileDate < stat.birthtimeMs){
+          newFileDate = stat.birthtimeMs
+          answer = filepath
+        }
+      }
     } catch (err) {
 
     }

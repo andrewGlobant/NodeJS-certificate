@@ -1,5 +1,5 @@
 'use strict'
-const { promisify } = require('util')
+// const { promisify } = require('util')
 
 const print = (err, contents) => { 
   if (err) console.error(err)
@@ -7,25 +7,35 @@ const print = (err, contents) => {
 }
 
 const opA = (cb) => {
-  setTimeout(() => {
-    cb(null, 'A')
-  }, 500)
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(cb(null, 'A'))
+    }, 500)
+  })
 }
 
 const opB = (cb) => {
-  setTimeout(() => {
-    cb(null, 'B')
-  }, 250)
+  return new Promise(resolve => {
+    setTimeout(() => {
+      cb(null, 'B')
+      resolve()
+    }, 250)
+  })
 }
 
 const opC = (cb) => {
-  setTimeout(() => {
-    cb(null, 'C')
-  }, 125)
+  return new Promise(resolve => {
+    setTimeout(() => {
+      cb(null, 'C')
+      resolve()
+    }, 125)
+  })
 }
 
-const pA = promisify(opA)
-const pB = promisify(opB)
-const pC = promisify(opC)
+async function  main() {
+  await opA(print)
+  await opB(print)
+  await opC(print)
+}
 
-pA(print).then(pB(print)).then(pC(print))
+main()
